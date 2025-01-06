@@ -63,7 +63,7 @@ body {
   min-height: 100vh; /* Altura mínima da tela */
   margin: 0;
   padding: 0;
-  background: url('Assets/bck3.jpg');
+  background: url('Simba/Assets/bck3.jpg');
 }
 
 /* Centralizar o container */
