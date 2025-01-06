@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para o Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background: linear-gradient(180deg, #0c3994, #6294c4);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1.t {
+  font-family: "Audiowide", serif;
+  font-size: 5.5rem;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  text-align: center;
+}
+
+i {
+  color: white;
+  margin: 0 5px;
+}
+
+/* Responsividade do Header */
+@media (max-width: 768px) {
+  header {
+    height: 200px;
+  }
+
+  h1.t {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 150px;
+  }
+
+  h1.t {
+    font-size: 1.5rem;
+  }
+}
+
+/* Estilos do Body */
+body {
+  display: flex;
+  flex-direction: column; /* Coloca header em cima */
+  min-height: 100vh; /* Altura mínima da tela */
+  margin: 0;
+  padding: 0;
+  background: url('Assets/bck3.jpg');
+}
+
+/* Centralizar o container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Faz o container ocupar o espaço restante */
+  width: 100%;
+  padding: 20px; /* Espaço ao redor */
+}
+
+/* Caixa de login */
+.login-box {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Painel esquerdo */
+.left-panel {
+  background: linear-gradient(to right, #0c3994, #6294c4);
+  color: white;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  clip-path: polygon(0 0, 100% 0, 65% 100%, 0 100%);
+}
+
+.left-panel h2 {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Painel direito */
+.right-panel {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.right-panel p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #0c3994;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-size: 0.9rem;
+  color: #2154c4;
+}
+
+form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #2154c4;
+  
+}
+
+form button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .login-box {
+    flex-direction: column;
+  }
+
+  .left-panel, .right-panel {
+    flex: 1;
+    width: 100%;
+  }
+
+  form {
+    gap: 10px;
+  }
+
+  .right-panel {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    flex-direction: column;
+  }
+
+  .left-panel, .right-panel {
+    flex: 1;
+    width: 100%;
+  }
+
+  form input, form button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .right-panel {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}

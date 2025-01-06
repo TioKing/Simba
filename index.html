@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Central R</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.25">
+  <link rel="stylesheet" type="text/css" href="Index.css">
+  <script src="https://kit.fontawesome.com/a1c7e3e316.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1 class="t">CENTRAL <i class="fa-regular fa-star"></i>FOCO<i class="fa-regular fa-star"></i></h1>
+  </header>
+
+  <div class="container">
+    <div class="login-box">
+      <div class="left-panel">
+        <h2>FOCO NO R&S&Z</h2>
+        <h2>CENTRAL</h2>
+      </div>
+      <div class="right-panel">
+        <p class="pg">Em caso de dúvidas, fale com seu Narrador de sua Geração.<br>
+          Para ter acesso à Central, coloque seus Dados de Player:
+        </p>
+        <form onsubmit="logar(event)">
+          <label for="usuario">Usuário:</label>
+          <input type="text" id="usuario" placeholder="Digite aqui">
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" placeholder="Digite aqui">
+          <button type="submit">Logar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const usuarios = [
+      { login: 'Sr e.x.e', senha: 'escudo', link: 'index menu.html' },
+      { login: 'Shanks', senha: 'Prime', link: 'index menusla.html' },
+      { login: 'Steve Wayne Roger', senha: 'Definitivo', link: 'index menu2.html' },
+      { login: 'King Senju', senha: 'parede de terra', link: 'king_menu.html' },
+    ];
+
+    function logar(event) {
+      event.preventDefault(); // Evita o recarregamento da página
+      const login = document.getElementById("usuario").value;
+      const senha = document.getElementById("senha").value;
+
+      for (let i = 0; i < usuarios.length; i++) {
+        if (usuarios[i].login === login && usuarios[i].senha === senha) {
+          window.location.href = usuarios[i].link; // Redireciona para o link específico do usuário
+          return;
+        }
+      }
+      alert("Login ou senha inválidos");
+    }
+  </script>
+</body>
+</html>
