@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    background-size: 1600px;
+}
+
+header{
+  background: #0969ff;
+  padding: 40px;
+}
+
+.tt{
+  background: white;
+  padding: 40px 400px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 60px;
+}
+
+.btdw{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 50%;
+  left: 12%;
+  background-color: #246bfc;
+  color: white;
+  padding: 70px 400px;
+  font-size: 60px;
+  border-radius: 30px;
+  box-shadow: 0 0 8px #000000a7;
+}
+
+.ar{
+  position: absolute;
+  font-size: 90px;
+  top: 56%;
+  left: 17%;
+  color: white;
+  z-index: 1;
+}
+
+.btdw2{
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 37%;
+  font-size: 30px;
+  color: white;
+}
+.dw{
+  position: absolute;
+  font-size: 90px;
+  top: 54%;
+  left: 75%;
+  color: white;
+  z-index: 1;
+}
+
+.dw{
+  background-color: #02b102;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+body{
+  background-image: url('/assets/bck2.jpg');
+  background-repeat: no-repeat;
+  background-size: 2400px 1200px;
+}
+

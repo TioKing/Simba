@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>personagem</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="index5.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header>
+  <h1 class="ttl">Nivel - Fundador Foco No R / S <br>Sr. e.x.e</h1><div class="ip2"> <img src="assets/ic1.jpg" width="50px" height="50px"></div>
+</header>
+
+
+
+
+
+    <div class="container">
+        <!-- Seção da imagem e texto: lado esquerdo -->
+        <div class="left-side">
+            <div class="image-container">
+                <div class="image-shadow"></div>
+                <img src="assets/p1.jpg" alt="Imagem do Sr e.x.e">
+            </div>
+            <div class="content">
+                <h2>Sr e.x.e</h2>
+                <p>Um Humano sequestrado no dia do seu nascimento pelo Thanos para virar uma verdadeira arma de assassinato em massa e um verdadeiro arauto, porém seu destino foi traçado de uma maneira que nem Thanos com sua maldição do conhecimento poderia prever. Sr e.x.e, junto com seu único e melhor amigo Pitter, formaram uma equipe de super heróis que tem a responsabilidade de acabar com o mal.</p>
+            </div>
+        </div>
+
+        <!-- Seção do gráfico e texto: lado direito -->
+        <div class="right-side">
+            <div class="chart-container">
+                <canvas id="pieChart"></canvas>
+            </div>
+            <div class="stats">
+                <p><strong>Sr e.x.e</strong> tem uma <strong>Taxa de 40% de Vitórias</strong> em suas lutas e uma <strong>Taxa de 60% de Derrota</strong>.</p>
+                <p>A cada 5 lutas o mesmo Ganha <strong>2</strong> e perde <strong>3</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('pieChart').getContext('2d');
+        const pieChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Vitórias (40%)', 'Derrotas (60%)'],
+                datasets: [{
+                    data: [40, 60],
+                    backgroundColor: ['#36a2eb', '#ff6384'],
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'top' }
+                }
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+
+
+
+<div class="pb">
+    
+ <h1 class="hb">ÁREA DE HABILIDADES</h1>   
+ <h1 class="hb1">ESTILOS DE LUTA</h1>  
+ <h5 class="hb2">"Captura Del Thanos"</h5>
+ <img id="gif" class="vg" src="assets/gif/v1.gif">
+ <p class="ehb">
+  Estilo de luta que tem objetivo em nocautear o mais rápido possível não importando a raça, usando golpes em pontos vitais e severos sem causar morte. 
+  <br><br>
+  <big><strong>Ensinado por Thanos</strong></big>
+</p>
+<h5 class="hb3">"Estilo de Luta Karete"</h5>
+<img id="gif" class="vg2" src="assets/gif/v2.gif">
+<p class="ehb2">
+  Estilo de luta melhor usado e totalmente aprimorado com a ajuda de Bruce Wayne em seu treinamento, com certeza um verdadeiro mestre.Ensinado por Bruce Wayne
+  <br><br>
+  <big><strong>Ensinado por Bruce Wayne</strong></big>
+</p>
+<h5 class="hb4">"Estilo de Luta Kung-Fu"</h5>
+<img id="gif" class="vg3" src="assets/gif/v3.gif">
+<p class="ehb3">
+  Estilo preferido que foi misturado com "Captura Del Thanos" Esse Estilo brutal foi mostrado na DLC, Essa mistura Se encaixou tão bem que consegui rivalizar com o Estilo Nazista Hydra.
+  <br><br>
+  <big><strong>Ensinado Bruce Wayne, Melhorado por Sr e.x.e</strong></big>
+</p>
+<h5 class="hb5">"Estilo de Luta Liga de Ra's Al Ghul"</h5>
+<img id="gif" class="vg4" src="assets/gif/v4.gif">
+<p class="ehb4">
+  Estilo que consiste em desarmar o inimigo ou rouba-lo sem o mesmo si quer perceber durante um ataque, Estilo mostrado na DLC sendo capaz de nudibriar um super soldado ou até mesmo o próprio Batman.
+  <br><br>
+  <big><strong>Ensinado Bruce Wayne</strong></big>
+</p>
+<h5 class="hb6">"Assassinato em Thanos"</h5>
+<img id="gif" class="vg5" src="assets/gif/v5.gif">       
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+</div>
+<div class="pb2">
+<h1 class="hb_1">ATAQUES</h1>        
+<h1 class="hb1_1">ATAQUES ESPECIAIS</h1>    
+
+<h5 class="hb7">"Fenda Branca Transversal"</h5>
+<img id="gif" class="vg6" src="assets/gif/v6.gif">
+<p class="ehb5">
+  Uma Grande fenda de Energia se abre Puxando/Repelindo Tudo que o usuário deseja, a cada secundo que o mesmo fica perto da fenda (65km) Ele ficará mais forte com todos seus stats aumentando num nível infinito
+  <br><br>
+  <strong>Condições:</strong> Space Infinit Compelta Ativa <br>
+  <strong>C/Rodada:</strong> 5+ Pontos de buff <br>
+  <strong>Custo:</strong> Quando as reservas chegarem abaixo de 40% A técnica será desativa e os buff retirados <br>
+    <strong>Stats Técnica</strong> `Divino`
+</p>
+<h5 class="hb8">"Special Mugem"</h5>
+<img id="gif" class="vg7" src="assets/gif/v7.gif">
+<p class="ehb6">
+  Uma Defesa Perfeita de 360°, é como se a gravidade se manifestasse em volta do usuário e repelisse qualquer golpe fisco e especial, uma Barreira que não pode ser superada apenas burlado talvez com Velocidade!?
+  <br><br>
+  <strong>Condições:</strong> Space Infinit Incompleta Ativa<br>
+<strong>Custo:</strong> Quando as reservas de ki chegarem abaixo de *25%* A técnica será desativado <br>
+<strong>Formação:</strong> A velocidade de raios,eletricidade,chamas,pressão não podem chegar a velocidade da luz `tão facilmente`.
+</p>
+<h5 class="hb9">"Escudo Protetor"</h5>
+<img id="gif" class="vg8" src="assets/gif/v8.gif">
+<p class="ehb7">
+  É algo difícil de se compreende... Tudo aquilo que consegue chegar no Mugem perde controle de seu corpo ele fica sem massa,sem energia é como se fosse um fantasma não pode ferir nem proteger ninguém, o usuário pode fazer isso com qualquer coisa que tenha 1 átomo de massa, O efeito e passageiro, isso é a ultima linha de defesa antes do golpe acertar o usuário
+  <br><br>
+  <strong>Condições:</strong> Space Infinit Incompleta Ativa <br>
+<strong>Custo:</strong> Quando as reservas de ki chegarem abaixo de 15% A técnica será cancelada na hora!<br>
+<strong>Duração:</strong> 1,5 = 9,0s `Tempo maior que mais reservas de ki e Space Infinit Completa Ativa`<br>
+<strong>Formação:</strong> O tamanho da massa pode chegar até 10x a Massa do Sol
+</p>
+<h5 class="hb10">"Componente A"</h5>
+<img id="gif" class="vg9" src="assets/gif/v9.gif">
+<p class="ehb8">
+  O Orb feito de pura energia infinita da joia do espaço que atrai qualquer pra ela, O componente A também pode ser arremessado caso colide qualquer ataque físico ou especial com velocidade abaixo da luz será Anulado imediatamente pela singularidade , porém o uso do ki é perceptível para canalizar o Componente A em Orb
+  <br><br>
+ <strong> Condições:</strong> Estar com ki alto e conseguir usar a energia infinita <br>
+<strong>Custo:</strong> Quando as reservas de ki chegarem abaixo de *75%* Será impossível usar a técnica! <br>
+<strong>Formação:</strong> O Uso do Ki é essencial pra formação do orb mesmo que tenha a energia infinito sem o ki apenas será explosão <br>
+<strong>Stats Técnica:</strong> `Divino`
+</p>
+<h5 class="hb11">"Choque espacial"</h5>
+<img id="gif" class="vg10" src="assets/gif/v10.gif">
+<p class="ehb9">
+  Choques de colisão, usam a energia ilimitada da joia para criar uma onda de gravidade ambulante que burla qualquer defesa ou armadura acertando músculos internos, a gravidade gerada é tão forte que pode ser vista a olho nu, Se for acerta ele usa a gravidade para travar os músculos do inimigo parando a ação do mesmo por um pequeno e curto tempo
+  <br><br>
+  <strong>Condições:</strong> Space Infinit Incompleta/Base Ativa<br>
+    <strong>Custo:</strong> Quando as reservas de ki chegarem abaixo de *2%* A técnica não poderá ser mais usada<br>
+    <strong>Formação:</strong> Exige grande treinamento e controle para usar mesma que não acha ki o custo da energia infinita é alta
+</p>
+<h5 class="hb12">"Componente B"</h5>
+<img id="gif" class="vg11" src="assets/gif/v11.gif">
+<p class="ehb10">
+  Um Orb trazendo o efeito reverso do Componente A tem a capacidade de suprimir um pequeno orb minúsculo que usa a gravidade para repeli qualquer coisa de perto do usuário o Componente B é usado da forma oposta do Componente A misturando ki com a energia Infinita da Joia, algo que da uma dor de cabeça pra fazer
+  <br><br>
+  <strong>Condições:</strong> Reservas de Ki e de energia infinita altas, o desgaste é muito alto<br>
+  <strong>Custo:</strong> Quando as reservas de ki chegarem abaixo de 50% A técnica não poderá ser mais usado até mesmo a juventude/vitalidade/eo corpo podem ser sugado pro uso da técnica <br>
+  <strong>Formação:</strong> O Uso do Ki é essencial pra formação do orb mesmo que tenha a energia infinito sem o ki apenas será explosão
+Stats Técnica: Divino
+</p>
+<h5 class="hb13">"Super Buraco Negro Infinito"</h5>    
+<img id="gif" class="vg12" src="assets/gif/v12.gif">
+<p class="ehb11">
+  Simplesmente algo aterrorizador, uma massa de pura gravidade nada pode escapar nem a luz. algo que pode sugar ou repelir tudo, toda massa e energia são sugados e pode ser expandir pra qualquer direção até em 360° algo que distorce a realidade algo sem logica
+  <br><br>
+<strong>Condições:</strong> Space Infinit Completa Ativa<br>
+<strong>Custo:</strong> Concerteza Uma técnica que usará tudo do usuário algo que é impossível de imaginar usar mais 2 vezes numa luta<br>
+<strong>Formação:</strong> Simplesmente algo infinito algo que tem sua própria energia e pode absorver tudo ao seu redor e se sustentar por si só, algo classificado como o mais forte<br> 
+<strong>Stast Técnica:</strong> 'Divino'
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+</div>
+<div class="pb3">
+
+
+
+
+
+
+    
+<h1 class="hb2_2">BIOGRAFIA</h1>
+
+<h5 class="hbg">"Forma Base"</h5>
+<div class="quadrado2a"><img class="p1" src="Assets/p1.jpg"></div>
+
+   <div class="chart" data-max-value="125">
+    <div class="bar" data-label="agilidade" data-value="58"></div>
+    <div class="bar" data-label="combate" data-value="58"></div>
+    <div class="bar" data-label="ki" data-value="58"></div>
+    <div class="bar" data-label="velocidade" data-value="39"></div>
+    <div class="bar" data-label="defesa" data-value="101"></div>
+    <div class="bar" data-label="força" data-value="32"></div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const chart = document.querySelector(".chart");
+      const maxValue = parseInt(chart.getAttribute("data-max-value"), 10); // Valor máximo do gráfico
+
+      const bars = document.querySelectorAll(".bar");
+
+      bars.forEach(bar => {
+        const value = parseInt(bar.getAttribute("data-value"), 10);
+        const barInner = document.createElement("div");
+        barInner.classList.add("bar-inner");
+
+        // Calcula a largura proporcional à largura total
+        const barWidth = (value / maxValue) * 100;
+        barInner.style.width = `${barWidth}%`;
+
+        // Insere a barra interna no elemento principal
+        bar.appendChild(barInner);
+      });
+    });
+  </script>  
+ <p class="ehbg"> Sr e.x.e, é um lutador de curto alcance um Super Soldado criado e feito para guerras, aprendendo desde criança com o titã louco thanos e futuramente com seu mestre bruce Wayne, Concerteza o melhor lutador e mais experiente em combate dos guerreiros Z, Possuindo sua característica única algo completamente única sua, <strong>Sua Habilidade Sempre permite ele se levantar depois de qualquer golpe o tornando de certa forma imortal a golpe físicos mesmo que seu inimigo seja o Rei de todos os Otisukisuki,</strong>porém suas Velocidade são Normais.</p>
+  
+<h5 class="hbg2">"Space Infinit Completa"</h5>
+<div class="quadrado3"><img class="p1" src="Assets/p2.jpg"></div>
+
+     <div class="horizontal-chart" data-max-value="1000">
+    <div class="horizontal-bar" data-name="agilidade" data-amount="158"></div>
+    <div class="horizontal-bar" data-name="combate" data-amount="100"></div>
+    <div class="horizontal-bar" data-name="ki" data-amount="98"></div>
+    <div class="horizontal-bar" data-name="velocidade" data-amount="98"></div>
+    <div class="horizontal-bar" data-name="defesa" data-amount="758"></div>
+    <div class="horizontal-bar" data-name="força" data-amount="108"></div>
+  </div>
+  
+   <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const chart = document.querySelector(".horizontal-chart");
+      const maxValue = parseInt(chart.getAttribute("data-max-value"), 10); // Valor máximo do gráfico
+
+      const bars = document.querySelectorAll(".horizontal-bar");
+
+      bars.forEach(bar => {
+        const value = parseInt(bar.getAttribute("data-amount"), 10);
+        const barInner = document.createElement("div");
+        barInner.classList.add("horizontal-bar-inner");
+
+        // Calcula a largura proporcional à largura total
+        const barWidth = (value / maxValue) * 100;
+        barInner.style.width = `${barWidth}%`;
+
+        // Insere a barra interna no elemento principal
+        bar.appendChild(barInner);
+      });
+    });
+  </script>
+  
+<p class="ehbg2">  Sr e.x.e, tem Sua descendência explicada, mesmo que ele realmente seja humano puro por algum motivo sangue divino corre por suas veias sendo um descendente direto da manifestação da própria joia, por isso Sr e.x.e é capaz de usar o poder da joia em escala máximo misturando os poderes divinos e Infinito da joia com seu ki, Criando a transformação <strong>Space Infinit</strong> Uma transformação que permiti ele usar `Conscientemente todo o poder da joia em escala máxima, melhorando e explorando ainda mais seu ponto maior e mais evidente transformação sua Defesa poderosa em algo Bizarramente fora do comum de qualquer escala, Superando até o Rei de todo Otisukisuki.
+  </p>
+<h5 class="hbg3">"Real Space Infinit Power"</h5>
+<div class="quadrado4"><img class="p1" src="Assets/p3.jpg"></div>
+ 
+     <div class="sales-chart" data-max-value="200">
+    <div class="sales-bar" data-product="agilidade" data-sales="100"></div>
+    <div class="sales-bar" data-product="combate" data-sales="99"></div>
+    <div class="sales-bar" data-product="ki" data-sales="58"></div>
+    <div class="sales-bar" data-product="velocidade" data-sales="100"></div>
+    <div class="sales-bar" data-product="defesa" data-sales="158"></div>
+    <div class="sales-bar" data-product="força" data-sales="158"></div>
+  </div>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const chart = document.querySelector(".sales-chart");
+      const maxValue = parseInt(chart.getAttribute("data-max-value"), 10); // Valor máximo do gráfico
+
+      const bars = document.querySelectorAll(".sales-bar");
+
+      bars.forEach(bar => {
+        const value = parseInt(bar.getAttribute("data-sales"), 10);
+        const barInner = document.createElement("div");
+        barInner.classList.add("sales-bar-inner");
+
+        // Calcula a largura proporcional à largura total
+        const barWidth = (value / maxValue) * 100;
+        barInner.style.width = `${barWidth}%`;
+
+        // Insere a barra interna no elemento principal
+        bar.appendChild(barInner);
+      });
+    });
+  </script>
+  
+<p class="ehbg3">  Sr e.x.e, Após ter a posse do Mjölnir uma arma lendária asgardiana que é usado Pelo seu Melhor e Único amigo Pitter, Sr e.x.e ganha acesso momentaneamente aos poderes Elimitado de Pitter, Isso acontece provavelmente por algo criado pelos seus descendentes mesmo sendo o contrario oposto <strong>PODER</strong> e <strong>ESPAÇO</strong> Elo de amizade que compartilham Conseguem trasander a Realidade Imposta pelo Mestre do Jogo, E mesclar seus Oposto em 1 só Claramente sua Amizade não é Baseada por serem do mesmo time isso veio muito antes da existência dos próprios celestiais, Após obter esse poder sua Defesa Diminui Porém ela é balanceada com seu novo poder destrutivo e 'Bestial'  Que tá existindo
+  </p>   
+
+
+
+
+
+    
+
+<style>
+
+
+    .chart {
+      
+      width: 100%;
+      
+    }
+
+    .bar {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      height: 40px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .bar::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      font-size: 14px;
+      color: white;
+    }
+
+    .bar::after {
+      content: attr(data-value) '';
+      position: absolute;
+      right: 10px;
+      font-size: 14px;
+      color: black;
+    }
+
+    .bar-inner {
+      height: 100%;
+      background-image: linear-gradient(90deg, #014fa7 40%, #b01313 60%);
+      transition: width 0.5s;
+    }
+  </style>
+
+
+ 
+
+
+
+
+
+<body>
+ 
+  <style>
+  
+
+    .horizontal-chart {
+      
+      width: 100%;
+      
+    }
+
+    .horizontal-bar {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      height: 40px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .horizontal-bar::before {
+      content: attr(data-name);
+      position: absolute;
+      left: 10px;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    .horizontal-bar::after {
+      content: attr(data-amount); /* Exibe apenas o valor numérico */
+      position: absolute;
+      right: 10px;
+      font-size: 14px;
+      color: #000000;
+    }
+
+    .horizontal-bar-inner {
+      height: 100%;
+      background-image: linear-gradient(90deg, #014fa7 40%, #70aff2 60%);
+      transition: width 0.5s;
+    }
+  </style>
+
+ 
+
+
+
+
+
+  
+  <style>
+    
+
+    .sales-chart {
+      
+      width: 100%;
+      
+    }
+
+    .sales-bar {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      height: 40px;
+      background-color: #d3d3d3;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .sales-bar::before {
+      content: attr(data-product);
+      position: absolute;
+      left: 10px;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    .sales-bar::after {
+      content: attr(data-sales); /* Exibe apenas o valor numérico */
+      position: absolute;
+      right: 10px;
+      font-size: 14px;
+      color: #000;
+    }
+
+    .sales-bar-inner {
+      height: 100%;
+      background-image: linear-gradient(90deg, #014fa7 40%, #5c1893 60%);
+      transition: width 0.5s;
+    }
+  </style>
+
+  
+  
+      
+    
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="liha2"></div>
+<div class="liha3"></div>
+<div class="liha4"></div>
+<div class="liha5"></div>
+</body>
+</html>

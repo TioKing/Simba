@@ -1,0 +1,192 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff; /* Fundo branco */
+  color: #000; /* Texto preto padrão */
+}
+
+/* Header */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff; /* Fundo branco */
+  color: #000; /* Texto preto */
+  border-radius: 10px; /* Apenas bordas superiores arredondadas */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  position: relative;
+  z-index: 10; 
+  top: -70px;/* Acima dos outros elementos */
+   /* Espaçamento */
+}
+
+/* Fundo cinza logo abaixo do nível */
+.background-below-level {
+  width: 100%;
+  background-color: #444; /* Fundo cinza */
+  height: 100px;
+  z-index: -1; 
+  /* Altura do fundo cinza */
+   /* Espaçamento lateral igual ao do nível */
+  
+}
+
+/* Texto na barra de nível */
+.top-bar .user-level {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000; /* Texto preto */
+}
+
+.top-bar .icon {
+  font-size: 18px;
+}
+
+/* Navegação */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  margin: -55px 0; /* Sem espaço extra */
+  background-color: #444; /* Fundo cinza */
+  border-radius: 5px;
+}
+
+nav ul li {
+  margin: 0 15px;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Suavidade na transição */
+}
+
+/* Animação ao passar o mouse nos botões principais */
+nav ul li:hover > a {
+  background-color: #fff; /* Fundo branco */
+  color: #000; /* Texto preto */
+  transition: all 0.3s ease; /* Suavidade na transição */
+}
+
+/* Submenu */
+nav ul li .submenu {
+  display: none; /* Escondido por padrão */
+  position: absolute;
+  top: 80px; /* Aba posicionada abaixo do botão principal */
+  left: 0;
+  background-color: #555;
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  z-index: 1000;
+  opacity: 0; /* Invisível inicialmente */
+  transform: translateY(-10px); /* Levemente deslocado para cima */
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+nav ul li .submenu li {
+  margin: 0;
+}
+
+nav ul li .submenu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff; /* Texto branco inicialmente */
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s ease; /* Suavidade na transição */
+}
+
+/* Hover no submenu */
+nav ul li .submenu li a:hover {
+  background-color: #fff; /* Fundo branco ao passar o mouse */
+  color: #000; /* Texto preto */
+}
+
+/* Mostrar o submenu com animação */
+nav ul li:hover .submenu {
+  display: block; /* Torna visível */
+  opacity: 1; /* Visível */
+  transform: translateY(0); /* Posicionado normalmente */
+}
+
+/* Main Section */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.highlight {
+  background-color: #2b2b2b; /* Fundo cinza escuro */
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff; /* Texto branco */
+  margin: 50px 0;
+}
+
+.highlight h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff; /* Título branco */
+}
+
+.creative-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.creative-logos img {
+  max-width: 100%;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.vs-divider {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+  color: #fff; /* Cor branca */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0066ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  
+}
+
+.button:hover {
+  background-color: #0052cc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .creative-logos {
+    flex-direction: column;
+  }
+
+  .creative-logos img {
+    margin: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}

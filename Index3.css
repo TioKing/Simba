@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Evita que a barra de rolagem horizontal apareça */
+}
+
+header {
+    background-color: gray;
+    
+    text-align: center;
+    padding: 40px 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s; /* Animação do cabeçalho */
+}
+
+header h1 {
+    font-size: 1rem;
+    background-color: white;
+    padding: 10px 10px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.timeline {
+    width: 80%;
+    margin: 40px auto;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 1s; /* Animação da linha do tempo */
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
+.timeline-item:nth-child(2) {
+    animation-delay: 2s; /* Adiciona atraso diferente para os itens */
+}
+
+.timeline-item:nth-child(3) {
+    animation-delay: 2.5s; /* Adiciona atraso diferente para os itens */
+}
+
+.timeline-item .timeline-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:#ac0023 ;
+    position: absolute;
+    left: -10px;
+    z-index: 2;
+}
+
+.timeline-item .timeline-content {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    opacity: 0;
+    animation: fadeInContent 1s ease-in-out forwards;
+    animation-delay: 2s; /* Atraso na animação do conteúdo */
+}
+
+/* Linha de continuidade */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0;
+    height: 100%;
+    border-left: 5px solid #ac0023;
+    z-index: 1;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: fadeInLine 1.5s ease-in-out forwards;
+    animation-delay: 1s; 
+    border-radius: 10px;/* Animação da linha */
+}
+
+/* Animações */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLine {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInContent {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

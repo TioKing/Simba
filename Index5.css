@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Sans-Serif;
+}
+
+body{
+  background-image: url('/assets/gif/vgbck.gif');
+  background-repeat: no-repeat;
+  background-size: 1550px 950px;
+}
+
+header{
+  margin: 0;
+  background-color: grey;
+  padding: 0.1px;
+  box-shadow: 0 0 15px #2a2a2a;
+}
+
+
+/* Reset básico */
+
+/* Layout principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Lado esquerdo: imagem e texto */
+.left-side {
+    flex: 1 1 55%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.image-shadow {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.content {
+    flex: 1;
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Lado direito: gráfico e texto */
+.right-side {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 300px;
+}
+
+.stats p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side, .right-side {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .right-side {
+        align-items: center;
+    }
+
+    .chart-container {
+        margin-top: 20px;
+    }
+}
+
+.ttl{
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  padding: 25px;
+  border-radius: 15px;
+  
+}
+
+.ip2{
+  position: absolute;
+  top: 40px;
+  left: 550px;
+}
+
+
+
+.quadrado2a {
+  
+  background-image: linear-gradient(45deg, #6ab0f5 40%, #ff0a00 60%);
+  width: 250px;
+  height: 250px;
+  margin: 100px 0;
+  border-radius: 10px;
+  
+}
+
+.quadrado3 {
+  
+  background-image: linear-gradient(45deg, #6ab0f5 40%, #006cd6 60%);
+  width: 250px;
+  height: 250px;
+  margin: 100px 0;
+  border-radius: 10px;
+ 
+}
+
+.quadrado4 {
+  
+  background-image: linear-gradient(45deg, #5c1893 40%, #006cd6 60%);
+  width: 250px;
+  height: 250px;
+  margin: 100px 0;
+  border-radius: 10px;
+  
+}
+
+.pb {
+  
+    background: linear-gradient(180deg, white 0%, black 10%, black 90%, white 100%);
+  box-sizing: border-box;
+  height: 0 auto;
+  width: 100%;
+  border-radius: 20px;
+  z-index: -1;
+  overflow: auto;
+}
+
+.pb2 {
+  
+  background: linear-gradient(180deg, white 0%, black 10%, black 90%, white 100%);
+  height:auto;
+  width: 100%;
+  margin: 200px 0px;
+  border-radius: 20px;
+  z-index: -1;
+  overflow: auto;
+}
+
+
+
+.pb3{
+  background: linear-gradient(180deg, white 0%, black 10%, black 90%, white 100%);
+  height:auto;
+  width: 100%;
+  margin: 200px 0px;
+  border-radius: 20px;
+  z-index: -10;
+  overflow: auto;
+}
+
+
+
+.p1 {
+  width: 270px;
+  height: 270px;
+  margin: 15px 15px;
+  box-shadow: 0 0 10px #363636;
+  border-radius: 5px;
+  
+}
+
+.pp {
+  font-family: "Quicksand", sans-serif;
+  position: absolute;
+  top: 610px;
+  left: 95px;
+  color: #000000;
+  font-size: 40px;
+  z-index: 10;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.pp1 {
+  font-family: "Quicksand", sans-serif;
+  position: absolute;
+  top: 670px;
+  left: 95px;
+  color: #000000;
+  font-size: 20px;
+  z-index: 10;
+  background-color: white;
+  width: 600px;
+  height: 180px;
+  border-radius: 10px;
+}
+
+.pp2 {
+  font-family: "Quicksand", sans-serif;
+  position: absolute;
+  text-align: center;
+  top: 670px;
+  left: 995px;
+  color: #000000;
+  font-size: 20px;
+  z-index: 10;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+.hb{
+  
+  margin-top: 350px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  
+  color: back;
+  font-size: 80px;
+  
+}
+.hb{
+  background-color: white;
+  
+  border-radius: 45px;
+}
+
+.hb_1{
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  
+  color: back;
+  font-size: 80px;
+}
+.hb_1{
+  background-color: white;
+  margin-top: 650px;
+  border-radius: 45px;
+}
+
+.hb1_1{
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 70px;
+}
+
+.hb2_2{
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: 450px;
+  color: black;
+  font-size: 80px;
+}
+.hb2_2{
+  background-color: white;
+  
+  border-radius: 45px;
+}
+
+.hb1{
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 70px;
+}
+
+.hb2{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+.hb3{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+
+.hb4{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+
+.hb5{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+
+.hb6{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+
+
+
+
+
+
+.hb7{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+
+.hb8{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+
+.hb9{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+.hb10{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+
+.hb11{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+.hb12{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+.hb13{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+
+.hbg{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  letter-spacing: 5px;
+  background-image: linear-gradient(90deg, #014fa7 40%, #ff0b0b 60%);
+  width: 100%;
+  
+  border-radius: 20px;
+}
+
+.hbg2{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  letter-spacing: 5px;
+  background-image: linear-gradient(90deg, #014fa7 40%, #6bb0f9 60%);
+  width: 100%;
+  
+  border-radius: 20px;
+}
+
+.hbg3{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  letter-spacing: 5px;
+  background-image: linear-gradient(90deg, #014fa7 40%, #5c1893 60%);
+  width: 100%;
+  
+  border-radius: 20px;
+}
+
+
+
+
+
+.ehb2{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-bottom:300px ;
+  color: white;
+  font-size: 50px;
+}
+
+.ehb{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-bottom:300px ;
+  color: white;
+  font-size: 50px;
+}
+
+.ehb3{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  margin-bottom:300px ;
+}
+
+.ehb4{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+  color: white;
+  font-size: 50px;
+  margin-bottom:100px ;
+}
+
+
+
+
+
+
+.ehb5{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-bottom:300px ;
+  color: white;
+  font-size: 50px;
+}
+
+.ehb6{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-bottom:300px ;
+  color: white;
+  font-size: 50px;
+}
+
+.ehb7{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-bottom:300px ;
+  color: white;
+  font-size: 50px;
+}
+
+.ehb8{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-bottom:300px ;
+  color: white;
+  font-size: 50px;
+}
+
+.ehb9{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-bottom:300px ;
+  color: white;
+  font-size: 50px;
+}
+
+.ehb10{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-bottom:300px ;
+  color: white;
+  font-size: 50px;
+}
+
+.ehb11{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-bottom:800px ;
+  color: white;
+  font-size: 50px;
+}
+
+.ehbg{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-bottom:300px ;
+  color: white;
+  font-size: 50px;
+}
+
+.ehbg2{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-bottom:300px ;
+  color: white;
+  font-size: 50px;
+}
+
+.ehbg3{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-bottom:900px ;
+  color: white;
+  font-size: 50px;
+}
+
+
+
+
+
+
+
+.vg {
+  
+  border-radius: 20px;
+  width: 97%;
+}
+
+.vg2 {
+  
+  border-radius: 20px;
+  width: 97%;
+}
+
+.vg3 {
+  
+  border-radius: 20px;
+  width: 97%;
+}
+
+.vg4 {
+  
+  border-radius: 20px;
+  width: 97%;
+}
+
+.vg5 {
+  
+  border-radius: 20px;
+  width: 97%;
+  margin-bottom: 400px;
+}
+
+
+
+
+.vg6 {
+  
+  border-radius: 20px;
+  width: 97%;
+}
+
+.vg7 {
+  
+  border-radius: 20px;
+  width: 97%;
+}
+
+.vg8 {
+  
+  border-radius: 20px;
+  width: 97%;
+}
+.vg9 {
+  
+  border-radius: 20px;
+  width: 97%;
+}
+.vg10 {
+  
+  border-radius: 20px;
+  width: 97%;
+}
+.vg11 {
+  
+  border-radius: 20px;
+  width: 97%;
+}
+.vg12 {
+  
+  border-radius: 20px;
+  width: 97%;
+}
+
+
+
+
+
+
+    #myChart {
+      position: absolute;
+        display: block;  /* Garante que ele seja visível */
+        width: 400px;    /* Define a largura desejada */
+        height: 300px;   /* Define a altura desejada */
+        margin: 100px 1000px;
+    }
+
+
+
+
+
+
+
+
+.linha2 {
+  
+  position: absolute;
+  top: 3100px;
+  left: 0px;
+  background-color: white;
+  box-shadow: 0 0 25px #ffffff9e;
+  width: 1550px;
+  height: 70px;
+  margin: 0;
+  border-radius: 20px;
+}
+
+.linha3 {
+  
+  position: absolute;
+  top: 5100px;
+  left:0px;
+  background-color: white;
+  box-shadow: 0 0 25px #ffffff9e;
+  width: 1550px;
+  height: 70px;
+  margin: 0;
+  border-radius: 20px;
+}
+
+.linha4 {
+  
+  position: absolute;
+  top: 7200px;
+  left: 0px;
+  background-color: white;
+  box-shadow: 0 0 25px #ffffff9e;
+  width: 1550px;
+  height: 70px;
+  margin: 0;
+  border-radius: 20px;
+}
+
+.linha5 {
+  
+  position: absolute;
+  top: 9200px;
+  left: 0px;
+  background-color: white;
+  box-shadow: 0 0 25px #ffffff9e;
+  width: 1550px;
+  height: 70px;
+  margin: 0;
+  border-radius: 20px;
+}
+
+
+
+
+
+@media (max-width: 768px){
+     .hbg{
+        font-size: 1.5rem;
+    }
+    .hbg2{
+        font-size: 1.5rem;
+    }
+    .hbg3{
+        font-size: 1.5rem;
+        }
+    .hb{
+        font-size: 1.5rem;
+    }
+    .hb_1{
+        font-size: 1.5rem;
+    }
+   .hb1_1{
+        font-size: 1.5rem;
+    }
+    .hb2_2{
+        font-size: 1.5rem;
+    }
+    .hb1{
+        font-size: 1.5rem;
+    }
+    .hb2{
+        font-size: 1.5rem;
+    }
+    .hb3{
+        font-size: 1.5rem;
+    }
+    .hb4{
+        font-size: 1.5rem;
+    }
+    .hb5{
+        font-size: 1.5rem;
+    }
+    .hb6{
+        font-size: 1.5rem;
+    }
+   .hb7{
+        font-size: 1.5rem;
+    }
+    .hb8{
+        font-size: 1.5rem;
+    }
+    .hb9{
+        font-size: 1.5rem;
+    }
+    .hb10{
+        font-size: 1.5rem;
+    }
+    .hb11{
+        font-size: 1.5rem;
+    }
+    .hb12{
+        font-size: 1.5rem;
+    }
+    .hb13{
+        font-size: 1.5rem;
+    }
+    .ehbg{
+        font-size: 1.5rem;
+    }
+     .ehbg2{
+        font-size: 1.5rem;
+    }
+    .ehbg3{
+        font-size: 1.5rem;
+    }
+    .ehb{
+        font-size: 1.5rem;
+    }
+     .ehb2{
+        font-size: 1.5rem;
+    }
+    .ehb3{
+        font-size: 1.5rem;
+    }
+    .ehb4{
+        font-size: 1.5rem;
+    }
+    .ehb5{
+        font-size: 1.5rem;
+    }
+    .ehb6{
+        font-size: 1.5rem;
+    }
+   .ehb7{
+        font-size: 1.5rem;
+    }
+    .ehb8{
+        font-size: 1.5rem;
+    }
+    .ehb9{
+        font-size: 1.5rem;
+    }
+    .ehb10{
+        font-size: 1.5rem;
+    }
+    .ehb11{
+        font-size: 1.5rem;
+    } 
+}
+
+
+@media (max-width: 375px){
+      .hbg{
+        font-size: 1rem;
+    }
+    .hbg2{
+        font-size: 1rem;
+    }
+    .hbg3{
+        font-size: 1rem;
+        }
+    .hb{
+        font-size: 1rem;
+    }
+    .hb_1{
+        font-size: 1rem;
+    }
+   .hb1_1{
+        font-size: 1rem;
+    }
+    .hb2_2{
+        font-size: 1rem;
+    }
+    .hb1{
+        font-size: 1rem;
+    }
+    .hb2{
+        font-size: 1rem;
+    }
+    .hb3{
+        font-size: 1rem;
+    }
+    .hb4{
+        font-size: 1rem;
+    }
+    .hb5{
+        font-size: 1rem;
+    }
+    .hb6{
+        font-size: 1rem;
+    }
+   .hb7{
+        font-size: 1rem;
+    }
+    .hb8{
+        font-size: 1rem;
+    }
+    .hb9{
+        font-size: 1rem;
+    }
+    .hb10{
+        font-size: 1rem;
+    }
+    .hb11{
+        font-size: 1rem;
+    }
+    .hb12{
+        font-size: 1rem;
+    }
+    .hb13{
+        font-size: 1rem;
+    }
+    .ehbg{
+        font-size: 1rem;
+    }
+     .ehbg2{
+        font-size: 1rem;
+    }
+    .ehbg3{
+        font-size: 1rem;
+    }
+    .ehb{
+        font-size: 1rem;
+    }
+     .ehb2{
+        font-size: 1rem;
+    }
+    .ehb3{
+        font-size: 1rem;
+    }
+    .ehb4{
+        font-size: 1rem;
+    }
+    .ehb5{
+        font-size: 1rem;
+    }
+    .ehb6{
+        font-size: 1rem;
+    }
+   .ehb7{
+        font-size: 1rem;
+    }
+    .ehb8{
+        font-size: 1rem;
+    }
+    .ehb9{
+        font-size: 1rem;
+    }
+    .ehb10{
+        font-size: 1rem;
+    }
+    .ehb11{
+        font-size: 1rem;
+    } 
+}
+
